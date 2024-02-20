@@ -1,101 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wireframe Prototype</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 100px);
-    grid-template-rows: repeat(12, 100px);
-    gap: 1px;
-  }
-  .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #e5e7eb; /* Tailwind gray-300 */
-    background-color: #f9fafb; /* Tailwind gray-100 */
-  }
-  .checkbox-list {
-    padding: 0;
-    list-style: none;
-  }
-  .checkbox-list li {
-    display: flex;
-    align-items: center;
-  }
-  .checkbox-list li input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
-  .form-input {
-    padding: 0.5rem;
-    border: 1px solid #e5e7eb; /* Tailwind gray-300 */
-    border-radius: 0.25rem;
-  }
-  .form-label {
-    font-weight: 600; /* Tailwind font-semibold */
-  }
-  .editable {
-    cursor: text;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Tuo Titolo</title>
+    
+    <!-- Collega il file CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Collega il file JavaScript -->
+    <script defer src="script.js"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-<div class="grid-container m-4">
-  <!-- Row 1 -->
-  <div class="grid-item col-span-2">
-    <label for="jobName" class="form-label">Job Name</label>
-  </div>
-  <div class="grid-item col-span-2">
-    <input type="text" id="jobName" class="form-input" placeholder="Job NAme">
-  </div>
-  <div class="grid-item col-span-2">
-    <label for="offerNumber" class="form-label">Offer Number</label>
-  </div>
-  <div class="grid-item col-span-2">
-    <input type="text" id="offerNumber" class="form-input" placeholder="Offer NUmber">
-  </div>
-  <div class="grid-item col-span-2">
-    <label for="owner" class="form-label">Owner</label>
-  </div>
-  <div class="grid-item col-span-2">
-    <input type="text" id="owner" class="form-input" placeholder="owner">
-  </div>
-
-  <!-- Row 2 -->
-  <div class="grid-item col-span-4">
-    <div class="editable" contenteditable="true">QUESTI SONO DEI CHECKBOX</div>
-  </div>
-  <div class="grid-item col-span-4">
-    <div class="editable" contenteditable="true">Options selected</div>
-  </div>
-  <div class="grid-item col-span-4">
-    <label for="date" class="form-label">Date</label>
-  </div>
-
-  <!-- Rows 3-8 (Checkboxes and descriptions) -->
-  <div class="grid-item col-span-4 row-span-6">
-    <ul class="checkbox-list">
-      <li><input type="checkbox" id="option1"><label for="option1">description</label></li>
-      <li><input type="checkbox" id="option2"><label for="option2">description</label></li>
-      <li><input type="checkbox" id="option3"><label for="option3">description</label></li>
-      <li><input type="checkbox" id="option4"><label for="option4">description</label></li>
-      <li><input type="checkbox" id="option5"><label for="option5">description</label></li>
-      <li><input type="checkbox" id="option6"><label for="option6">description</label></li>
-      <li><input type="checkbox" id="option7"><label for="option7">description</label></li>
-      <li><input type="checkbox" id="option8"><label for="option8">description</label></li>
-    </ul>
-  </div>
-  <div class="grid-item col-span-4 row-span-6">
-    <div class="editable" contenteditable="true">QUESTA DESCRIZIONE è COMPILABILE</div>
-  </div>
-  <div class="grid-item col-span-4 row-span-6">
-    <input type="date" id="date" class="form-input">
-  </div>
-</div>
+<body>
+    <div class="container">
+        <h1>Benvenuto nel mio sito!</h1>
+        <p>Questo è un esempio di struttura base con CSS e JavaScript.</p>
+    </div>
 </body>
 </html>
