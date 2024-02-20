@@ -2,20 +2,21 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
-    padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Puoi regolare il valore a seconda della quantità di arrotondamento desiderata */
+    overflow: hidden; /* Per garantire che i figli non sporgano dai bordi arrotondati */
+      margin: 20px; /* Aggiungi margine al contenitore */
 }
 
-h1 {
-    color: #007bff;
+.column {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    margin: 10px; /* Aggiungi margine al contenitore */
 }
-
-/* Aggiungi ulteriori stili a seconda delle tue esigenze */
